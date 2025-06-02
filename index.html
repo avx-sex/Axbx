@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVX REGEDIT - Free Fire Premium Hacks</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Russo+One&display=swap');
+        
+        :root {
+            --neon-blue: #00f7ff;
+            --dark-blue: #001a33;
+            --accent-blue: #0066ff;
+            --text-glow: 0 0 10px #00f7ff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--dark-blue);
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(0, 247, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(0, 123, 255, 0.1) 0%, transparent 50%);
+            animation: bgPulse 15s infinite alternate;
+            min-height: 100vh;
+        }
+
+        @keyframes bgPulse {
+            0% { background-color: #001a33; }
+            100% { background-color: #000d1a; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            height: 120px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 15px var(--neon-blue));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-family: 'Russo One', sans-serif;
+            font-size: 3rem;
+            margin: 10px 0;
+            text-shadow: var(--text-glow), 0 0 20px var(--accent-blue);
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, var(--neon-blue), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: neonGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes neonGlow {
+            from { text-shadow: var(--text-glow), 0 0 20px var(--accent-blue); }
+            to { text-shadow: var(--text-glow), 0 0 30px var(--accent-blue), 0 0 40px #0066ff; }
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin: 10px 0 30px;
+            text-shadow: 0 0 5px var(--neon-blue);
+            color: var(--neon-blue);
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(0, 247, 255, 0.2);
+            border: 1px solid var(--neon-blue);
+            padding: 5px 15px;
+            border-radius: 50px;
+            margin: 5px;
+            font-size: 0.9rem;
+            text-shadow: 0 0 5px var(--neon-blue);
+            animation: badgePulse 2s infinite alternate;
+        }
+
+        @keyframes badgePulse {
+            from { box-shadow: 0 0 5px rgba(0, 247, 255, 0.5); }
+            to { box-shadow: 0 0 15px rgba(0, 247, 255, 0.8); }
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .product-card {
+            background: rgba(0, 30, 60, 0.7);
+            border: 2px solid var(--neon-blue);
+            border-radius: 10px;
+            width: 300px;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0, 247, 255, 0.5);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 247, 255, 0.8);
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                transparent 45%,
+                rgba(0, 247, 255, 0.3) 50%,
+                transparent 55%
+            );
+            transform: rotate(30deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(30deg); }
+            100% { transform: translateX(100%) rotate(30deg); }
+        }
+
+        .product-title {
+            font-size: 1.8rem;
+            margin: 0 0 10px;
+            color: var(--neon-blue);
+            text-shadow: var(--text-glow);
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: #00ffaa;
+            margin: 15px 0;
+            text-shadow: 0 0 5px #00ffaa;
+        }
+
+        .product-features {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .product-features li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .product-features li::before {
+            content: '✓';
+            color: #00ffaa;
+            position: absolute;
+            left: 0;
+            text-shadow: 0 0 5px #00ffaa;
+        }
+
+        .buy-btn {
+            background: linear-gradient(45deg, var(--accent-blue), var(--neon-blue));
+            color: #001a33;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+            margin-top: 15px;
+        }
+
+        .buy-btn:hover {
+            background: linear-gradient(45deg, var(--neon-blue), var(--accent-blue));
+            box-shadow: 0 0 20px rgba(0, 247, 255, 0.8);
+            transform: scale(1.05);
+        }
+
+        .social-section {
+            text-align: center;
+            margin: 50px 0;
+            padding: 30px;
+            background: rgba(0, 20, 40, 0.7);
+            border-radius: 10px;
+            border: 1px solid var(--accent-blue);
+            box-shadow: 0 0 20px rgba(0, 162, 255, 0.3);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--neon-blue);
+            text-shadow: var(--text-glow);
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            background: rgba(0, 60, 120, 0.7);
+            border: 1px solid var(--accent-blue);
+            padding: 12px 20px;
+            border-radius: 5px;
+            color: var(--neon-blue);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .social-link:hover {
+            background: rgba(0, 100, 200, 0.7);
+            transform: translateY(-3px);
+            box-shadow: 0 0 15px rgba(0, 162, 255, 0.5);
+        }
+
+        .social-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .review-section {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .review-img {
+            max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
+            margin-top: 20px;
+        }
+
+        .premium-accounts {
+            background: rgba(0, 20, 40, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid var(--accent-blue);
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .premium-accounts p {
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid var(--accent-blue);
+            font-size: 0.9rem;
+            color: var(--neon-blue);
+        }
+
+        .watermark {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8rem;
+            color: rgba(0, 247, 255, 0.5);
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+            border: 3px solid var(--neon-blue);
+            border-radius: 10px;
+            box-shadow: 0 0 30px var(--neon-blue);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .product-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://files.catbox.moe/lacprl.png" alt="AVX Regedit Logo" class="logo">
+            <h1>AVX REGEDIT</h1>
+            <p class="tagline">PREMIUM FREE FIRE HACKS & REGEDIT CATALOG</p>
+            
+            <div>
+                <span class="badge">UNDETECTABLE</span>
+                <span class="badge">60FPS SMOOTH</span>
+                <span class="badge">WE ARE THE iOS EXPERTS</span>
+            </div>
+        </header>
+
+        <div class="products">
+            <div class="product-card">
+                <h3 class="product-title">PREMIUM</h3>
+                <div class="product-price">1500₹</div>
+                <ul class="product-features">
+                    <li>All Features Unlocked</li>
+                    <li>Priority Support</li>
+                    <li>Exclusive Skins</li>
+                    <li>Lifetime Updates</li>
+                    <li>Private Tutorials</li>
+                </ul>
+                <button class="buy-btn" onclick="showPayment()">BUY NOW</button>
+            </div>
+
+            <div class="product-card">
+                <h3 class="product-title">SILVER</h3>
+                <div class="product-price">900₹</div>
+                <ul class="product-features">
+                    <li>Diamond Generator</li>
+                    <li>Aimbot Lite</li>
+                    <li>Weekly Updates</li>
+                    <li>Email Support</li>
+                    <li>Basic Features</li>
+                </ul>
+                <button class="buy-btn" onclick="showPayment()">BUY NOW</button>
+            </div>
+
+            <div class="product-card">
+                <h3 class="product-title">BRONZE</h3>
+                <div class="product-price">500₹</div>
+                <ul class="product-features">
+                    <li>Basic Regedit</li>
+                    <li>No Recoil</li>
+                    <li>Monthly Updates</li>
+                    <li>Community Support</li>
+                    <li>Entry Level</li>
+                </ul>
+                <button class="buy-btn" onclick="showPayment()">BUY NOW</button>
+            </div>
+        </div>
+
+        <div class="premium-accounts">
+            <h2 class="section-title">FREE FIRE PREMIUM ACCOUNTS</h2>
+            <p>Get exclusive premium accounts with rare skins and unlimited resources!</p>
+            <p>Join our Telegram channel for daily updated accounts:</p>
+            <a href="https://t.me/+rYouZ4vXZ_A3MDJl" class="buy-btn" style="max-width: 300px; margin: 20px auto;">JOIN TELEGRAM</a>
+        </div>
+
+        <div class="review-section">
+            <h2 class="section-title">CUSTOMER REVIEWS</h2>
+            <img src="https://files.catbox.moe/p5bjk2.png" alt="Customer Review" class="review-img">
+        </div>
+
+        <div class="social-section">
+            <h2 class="section-title">CONTACT & SUPPORT</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/avx_reg?igsh=MTR1dHR4bmxwbm53bQ%3D%3D&utm_source=qr" class="social-link" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon">
+                    Instagram
+                </a>
+                <a href="https://t.me/+rYouZ4vXZ_A3MDJl" class="social-link" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111644.png" alt="Telegram" class="social-icon">
+                    Telegram
+                </a>
+                <a href="http://wa.me/6283867936993" class="social-link" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" class="social-icon">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2023 AVX REGEDIT. All rights reserved. Not affiliated with Garena Free Fire.
+    </footer>
+
+    <div class="watermark">
+        AVX REGEDIT | PREMIUM HACKS
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img src="https://files.catbox.moe/axxpkv.jpeg" alt="Payment Instructions" class="modal-content">
+    </div>
+
+    <!-- Audio Player (autoplay) -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="https://files.catbox.moe/r4xo96.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Show payment modal
+        function showPayment() {
+            document.getElementById('paymentModal').style.display = 'block';
+        }
+
+        // Close modal
+        function closeModal() {
+            document.getElementById('paymentModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('paymentModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Auto-play music with user interaction
+        document.addEventListener('click', function() {
+            const audio = document.getElementById('bgMusic');
+            audio.play().catch(e => console.log('Auto-play prevented:', e));
+        }, { once: true });
+
+        // Smooth animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.product-card');
+            
+            cards.forEach((card, index) => {
+                card.style.transitionDelay = `${index * 0.1}s`;
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 500 + index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
